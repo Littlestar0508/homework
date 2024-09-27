@@ -128,4 +128,31 @@
 
 출력 예제
 
-- [ ] 할 일
+> - [ ] 할 일(\- \[ \] 할 일)
+> - [x] 한 일(\- \[X\] 한 일)
+
+<hr>
+
+## 이미지
+
+1. 원하는 이미지를 md 문서에 삽입
+2. ex) \!\[제목](경로)
+3. 해당 파일이 디렉토리 경로에 존재 해야 한다(크기 조절 불가능)
+4. img 태그를 사용해서도 나타낼 수 있다(크기 조절 가능)
+
+출력 예제
+
+> ![photoJ1](/assets/md/KakaoTalk_20240206_132157545.jpg) <br>
+
+<img src="../homework/assets/md/KakaoTalk_20240206_132157545_08.jpg" width="400px" height = "225px" alt="photoJ2"/>
+
+<hr>
+
+## 코드 생성
+
+1. 원하는 코드를 넣고 싶을때 사용
+2. ex) \`\`\` code \`\`\`
+
+출력 예제
+
+> `import java.util.* `<br> > `public class Main { `<br> > `&ensp;public class void main(String[] args) { `<br> > `&ensp;&ensp;System.out.println("Hello World!!"); `<br> > `&ensp;&ensp;} `<br> > `&ensp;} `<br>
