@@ -5,22 +5,23 @@
 <p align="center">
   <img src="./assets/md/infj.webp">
 </p>
-<p align="center">
 
-| `MBTI적 장점` | `실제 장점` | `MBTI적 단점` | `실제 단점` |
-| ------------- | ----------- | ------------- | ----------- |
+<center>
+
+| <center>`MBTI적 장점`</center> | <center>`실제 장점`</center> | <center>`MBTI적 단점`</center> | <center>`실제 단점`</center> |
+| :-------------: | :-----------: | :-------------: | :-----------: |
 | 공감능력      | 성실함      | 소심함        | 내성적      |
 | 창의성        | 친절함      | 고구마        | 고구마      |
 | 독립심        | 소통        | 강박          | 우유부단    |
 | 원칙주의      | 긍정적      | 번아웃        | 걱정        |
 
-</p>
+</center>
 
 <br>
 
 > ### MBTI로 성격을 조금은 이해할 수 있지 않을까?
-> 요즘 많은 사람들의 아이스브레이킹 토크로 많이 쓰이는 MBTI를 소개해봤습니다.<br>
-> MBTI를 맹신하진 않지만 그래도 어떠한 사람을 이해하는 도구로 유용하다 생각합니다! <br>
+> **요즘 많은 사람들의 아이스브레이킹 토크로 많이 쓰이는 MBTI를 소개해봤습니다.**<br>
+> **MBTI를 맹신하진 않지만 그래도 어떠한 사람을 이해하는 도구로 유용하다 생각합니다!** <br>
 
 <br>
 <hr>
@@ -31,14 +32,14 @@
 > ## 세상을 더욱 아름다운 눈으로 이해해보자
 
 <p align="center">
-  <img src="./assets/md/jphoto6.jpg" width="450px">
-  <img src="./assets/md/jphoto5.jpg" width="500px">
-  <img src="./assets/md/jphoto2.jpg" width="250px">
+  <img src="./assets/md/jphoto6.jpg" width="350px">
+  <img src="./assets/md/jphoto5.jpg" width="400px">
+  <img src="./assets/md/jphoto2.jpg" width="150px">
 </p>
 <p align="center">
-  <img src="./assets/md/jphoto3.jpg" width="400px">
-  <img src="./assets/md/jphoto4.jpg" width="400px">
-  <img src="./assets/md/jphoto1.jpg" width="400px">
+  <img src="./assets/md/jphoto3.jpg" width="300px">
+  <img src="./assets/md/jphoto4.jpg" width="300px">
+  <img src="./assets/md/jphoto1.jpg" width="300px">
 </p>
 
 > ### 사진이라는 취미를 시작하며 든 생각이었습니다.<br>
@@ -85,7 +86,7 @@
 </p>
 
 > <details>
-> <summary style="font-size:20px ; font-weight:bold">앨범 정보</summary>
+> <summary><span style="font-size:20px ; font-weight:bold">앨범 정보</span></summary>
 > 1. 검정치마 - Team Baby<br>
 > 2. 윤하 - RescuE<br>
 > 3. 쏜애플 - 계몽<br>
@@ -113,14 +114,14 @@
 
 > ## '아직은' 초보입니다!
 <p align="center">
-  <img src="./assets/md/practice1.jpg" width="300px">
-  <img src="./assets/md/practice2.jpg" width="300px">
-  <img src="./assets/md/practice3.jpg" width="200px">
-  <img src="./assets/md/practice4.jpg" width="200px">
+  <img src="./assets/md/practice1.jpg" width="550px">
+  <img src="./assets/md/practice2.jpg" width="350px">
+  <img src="./assets/md/practice3.jpg" width="300px">
+  <img src="./assets/md/practice4.jpg" width="300px">
 </p>
 
 > <details>
-> <summary style="font-weight:bold;font-size:20px">이게 뭔가요?</summary>
+> <summary><span style="font-weight:bold;font-size:20px">이게 뭔가요?</span></summary>
 > 조금 부끄럽지만 혼자서 따라하기도 해보고 혼자서도 해본 결과물들입니다. <br>
 ><br>
 > 1. 혼자서 디자인과 HTML과 CSS를 익힐겸 했던 작업입니다. <br>
@@ -134,7 +135,7 @@
 
 > ### 할 수 있는건 노력뿐!
 > 시작은 남들처럼 초보로 시작했습니다.<br>
-> 하지만 결과는 초보로 멈춰있고 싶지 않습니다.<br>
+> <u>하지만 결과는 초보로 멈춰있고 싶지 않습니다.</u><br>
 > <br>
 > 아직은 많이 부족하지만 계속해서 발전해보겠습니다.
 
@@ -150,7 +151,7 @@
 > 다들 좋은 분일거라 생각돼서 큰 걱정은 없습니다!<br>
 > 하지만 그럼에도 원하는 인물상이 있냐고 물어보시면!
 > <details>
-> <summary style="font-weight:bold; font-size:18px">없습니다! 다 좋습니다!</summary>
+> <summary><span style="font-weight:bold; font-size:18px">없습니다! 다 좋습니다!</span></summary>
 > 1. 대화를 할 때 상대방의 의견에도 귀를 기울여줬음 좋겠습니다.<br>
 > 2. 아무래도 '팀'인 만큼 문제 발생이나 긴급상황 발생 시 눈치보지 않으셨음 좋겠습니다.<br>
 > 3. 부족할 수 있습니다! 저도 많이 부족하니까요.. 하지만 같이 노력하는 팀원이면 좋겠습니다.<br>
