@@ -154,5 +154,12 @@
 2. ex) \`\`\` code \`\`\`
 
 출력 예제
-
-> `import java.util.* `<br> > `public class Main { `<br> > `&ensp;public class void main(String[] args) { `<br> > `&ensp;&ensp;System.out.println("Hello World!!"); `<br> > `&ensp;&ensp;} `<br> > `&ensp;} `<br>
+```java
+  import java.util.*;
+  
+  public class Main {  
+      public static void main(String[] args) {  
+         System.out.println("Hello World!!");  
+      } 
+   } 
+```
