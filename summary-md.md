@@ -142,9 +142,9 @@
 
 출력 예제
 
-> ![photoJ1](/assets/md/KakaoTalk_20240206_132157545.jpg) <br>
-
-<img src="../homework/assets/md/KakaoTalk_20240206_132157545_08.jpg" width="400px" height = "225px" alt="photoJ2"/>
+> ![photoJ1](./assets/md/jphoto1.jpg) <br>
+>
+> <img src="./assets/md/jphoto4.jpg" width="400px" alt="photoJ2"/>
 
 <hr>
 
