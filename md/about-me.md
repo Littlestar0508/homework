@@ -3,13 +3,13 @@
 > ## 선의의 옹호자 INFJ
 
 <p align="center">
-  <img src="./assets/md/infj.webp">
+  <img src="./images/infj.webp">
 </p>
 
 <center>
 
 | <center>`MBTI적 장점`</center> | <center>`실제 장점`</center> | <center>`MBTI적 단점`</center> | <center>`실제 단점`</center> |
-| :-------------: | :-----------: | :-------------: | :-----------: |
+| :---: | :---: | :---: | :---: |
 | 공감능력      | 성실함      | 소심함        | 내성적      |
 | 창의성        | 친절함      | 고구마        | 고구마      |
 | 독립심        | 소통        | 강박          | 우유부단    |
@@ -32,14 +32,14 @@
 > ## 세상을 더욱 아름다운 눈으로 이해해보자
 
 <p align="center">
-  <img src="./assets/md/jphoto6.jpg" width="350px">
-  <img src="./assets/md/jphoto5.jpg" width="400px">
-  <img src="./assets/md/jphoto2.jpg" width="150px">
+  <img src="./images/jphoto6.jpg" width="350px">
+  <img src="./images/jphoto5.jpg" width="400px">
+  <img src="./images/jphoto2.jpg" width="150px">
 </p>
 <p align="center">
-  <img src="./assets/md/jphoto3.jpg" width="300px">
-  <img src="./assets/md/jphoto4.jpg" width="300px">
-  <img src="./assets/md/jphoto1.jpg" width="300px">
+  <img src="./images/jphoto3.jpg" width="300px">
+  <img src="./images/jphoto4.jpg" width="300px">
+  <img src="./images/jphoto1.jpg" width="300px">
 </p>
 
 > ### 사진이라는 취미를 시작하며 든 생각이었습니다.<br>
@@ -60,7 +60,7 @@
 
 > ## 박제가 되어버린 천재를 아시오.
 
-<p align="center"><img src="./assets/md/leesang.jpg" width="400px"/></p>
+<p align="center"><img src="./images/leesang.jpg" width="400px"/></p>
 
 > **최근 봤던 소설인 이상의 날개의 가장 유명한 대사를 인용해봤습니다.** <br>
 > <br>
@@ -77,12 +77,12 @@
 > ## 난 너랑 있는 게 제일 좋아
 
 <p align="center">
-  <img src="./assets/md/team_baby.webp" width="300px" alt="teambaby">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./assets/md/rescue.webp" width="300px" alt="rescue">
+  <img src="./images/team_baby.webp" width="300px" alt="teambaby">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./images/rescue.webp" width="300px" alt="rescue">
   <br>
   <br>
-  <img src="./assets/md/enlightment.webp" width="300px" alt="enlightment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./assets/md/jbj2.webp" width="300px">
+  <img src="./images/enlightment.webp" width="300px" alt="enlightment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./images/jbj2.webp" width="300px">
 </p>
 
 > <details>
@@ -114,10 +114,10 @@
 
 > ## '아직은' 초보입니다!
 <p align="center">
-  <img src="./assets/md/practice1.jpg" width="550px">
-  <img src="./assets/md/practice2.jpg" width="350px">
-  <img src="./assets/md/practice3.jpg" width="300px">
-  <img src="./assets/md/practice4.jpg" width="300px">
+  <img src="./images/practice1.jpg" width="550px">
+  <img src="./images/practice2.jpg" width="350px">
+  <img src="./images/practice3.jpg" width="300px">
+  <img src="./images/practice4.jpg" width="300px">
 </p>
 
 > <details>
@@ -145,7 +145,7 @@
 
 > ## 걱정되는 것은..? 역시 팀플!
 <p align="center">
-  <img src="./assets/md/pattmatt.jpg">
+  <img src="./images/pattmatt.jpg">
 </p>
 
 > 다들 좋은 분일거라 생각돼서 큰 걱정은 없습니다!<br>
@@ -165,7 +165,7 @@
 > ## 마지막으로 하고 싶으신 말씀 있으실까요?
 
 <p align="center">
-  <img src="./assets/md/racoon.webp">
+  <img src="./images/racoon.webp">
 </p>
 
 > 앞으로 6개월동안 잘 부탁드립니다!<br>
