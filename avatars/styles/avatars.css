@@ -1,0 +1,45 @@
+.activate {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #4cfe88;
+  width: 18px;
+  height: 18px;
+  z-index: 999;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+.deactivate {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #dbdbdb;
+  width: 18px;
+  height: 18px;
+  z-index: 999;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+.profile {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.container {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin: 20px;
+  float: left;
+}
+
+body {
+  width: 500px;
+  height: 195px;
+  justify-content: center;
+  align-items: center;
+}
