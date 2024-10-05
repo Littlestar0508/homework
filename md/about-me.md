@@ -6,6 +6,8 @@
   <img src="./images/infj.webp">
 </p>
 
+<center>
+
 | <center>`MBTI적 장점`</center> | <center>`실제 장점`</center> | <center>`MBTI적 단점`</center> | <center>`실제 단점`</center> |
 | :---: | :---: |:---:|:---:|
 |공감능력|성실함|소심함|내성적|
@@ -13,6 +15,7 @@
 |독립심|소통|강박|우유부단|
 |원칙주의|긍정적|번아웃|걱정|
 
+</center>
 
 <br>
 
