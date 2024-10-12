@@ -76,7 +76,10 @@ div태그로 마크업을 하게 되었습니다.
 중앙 정렬을 위해 margin-inline값도 auto로 지정했습니다.<br>
 (이 요소는 form태그 안에 있습니다.)
 
-<img src="./images/infj.webp">
+<p align="center">
+<img src="./images/login-desktop.jpg">
+<img src="./images/login-mobile.jpg">
+</p>
 
 >### 유효성 검사
 사실 이는 javascript로 많이 한다고 생각했습니다. <br>
@@ -107,6 +110,12 @@ sr-only는 screen reader가 인식하지만 display:none은 인식하지 않는�
 
 invalid일때는 기본적으로 보이지 않지만 유효성이 일치하지 않는다면<br>
 display:none; 에서 display:block; 으로 바꿔 보이도록 유도했습니다.<br>
+
+<center>
+
+<img src="./images/login_validation.jpg">
+
+</center>
 
 
 > ### ON-OFF기능
@@ -166,6 +175,13 @@ input 태그에 type을 search로 두고 background-image를 svg파일로 대체
   }
 ```
 
+<center>
+
+<img src="./images/login-options-off.jpg">
+<img src="./images/login-options-on.jpg">
+
+</center>
+
 > ### 그 이외의 다양한 CSS들
 <ul>
 <li> placeholder의 padding
@@ -215,7 +231,14 @@ input 태그에 type을 search로 두고 background-image를 svg파일로 대체
 >기존에 사용하던 width와 height 혹은 left,right 매우 직관적이고 흠이 없다고 생각하여 계속 사용하였습니다.<br>
 >하지만 ltr과 rtl의 존재를 알고 나서 모든 사람들에게 접근성을 높이기 위해선<br>
 >논리 속성의 사용을 습관화하여야 한다고 생각했습니다.<br>
->따라서 기존의 버릇이던 것을 버리고 inline-size 혹은 margin-block 과 같은 논리 속성을 사용해봤습니다.<br>
+>따라서 기존의 버릇이던 것을 버리고 inline-size 혹은 margin-block 과 같은 논리 속성을 사용해봤습니다.
+
+<br>
+<li>로그인 유지와 IP보안 순서
+
+>모바일 환경에선 IP보안 container가 나타나지 않는 대신 그 자리에 로그인 유지가 와야했습니다.<br>
+>이를 해결하기 위해 로그인 유지 container와 IP보안 container를 row-reverse 배치를 했습니다.<br>
+>그렇게 되면 IP보안 container 이 display:none;이 됐을때 그 자리에 로그인 유지 container가 올 수 있었습니다.
 
 </ul>
 
@@ -237,7 +260,6 @@ input 태그에 type을 search로 두고 background-image를 svg파일로 대체
 >페이지가 시작하자마자 유효성 검사가 나타나 불편하다는 점이 있습니다.<br>
 >이는 해결할 수 있을 것 같은데 하면서도 아이디어가 떠오르지 않아 아쉬웠습니다.
 
-<li></li>
 <br>
 
 </ul>
