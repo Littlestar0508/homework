@@ -6,7 +6,6 @@ html {
 
 body {
   --base-text-color: #121212;
-  --logo-width: 230px;
   --focus-color: #24388d;
   --input-border-color: #dadada;
   --input-bgc: #fff;
@@ -35,27 +34,27 @@ a {
 }
 
 .naver_logo {
-  inline-size: var(--logo-width);
+  inline-size: 14.375rem;
   margin-inline: auto;
-  margin-block-start: 100px;
+  margin-block-start: 6.25rem;
 }
 
 .login_insert_info {
   inline-size: 100%;
-  padding-inline: 20px;
-  margin-block-start: 50px;
+  padding-inline: 1.25rem;
+  margin-block-start: 3.125rem;
 
   .insert_id,
   .insert_pwd {
-    margin-block: 10px;
+    margin-block: 0.625rem;
   }
 
   .input_pwd,
   .input_id {
     box-sizing: border-box;
-    font-size: 14px;
-    line-height: 45px;
-    border: 1px solid var(--input-border-color);
+    font-size: 0.875rem;
+    line-height: 2.8125rem;
+    border: 0.0625rem solid var(--input-border-color);
     background-color: var(--input-bgc);
     inline-size: 100%;
   }
@@ -63,7 +62,7 @@ a {
   .input_pwd:focus,
   .input_id:focus {
     outline: none;
-    border: 2px solid var(--input-focus-border-color);
+    border: 0.125rem solid var(--input-focus-border-color);
     background-color: var(--input-focus-bgc);
   }
 
@@ -71,9 +70,9 @@ a {
   .invalid_id {
     display: none;
     color: var(--wrong-validate);
-    margin-block-start: 7px;
-    margin-block-end: 10px;
-    font-size: 12px;
+    margin-block-start: 0.4375rem;
+    margin-block-end: 0.625rem;
+    font-size: 0.75rem;
   }
 
   .input_pwd:invalid + .invalid_pwd,
@@ -89,15 +88,15 @@ a {
     all: unset;
     inline-size: 100%;
     font-size: var(--base-text-size);
-    line-height: 45px;
+    line-height: 2.8125rem;
     color: var(--btn-text-color);
     background-color: var(--btn-bgc);
-    margin-block-start: 10px;
+    margin-block-start: 0.625rem;
     text-align: center;
     font-weight: 600;
 
     &:focus {
-      outline: 1px solid black;
+      outline: 0.0625rem solid black;
     }
   }
 
@@ -114,16 +113,16 @@ a {
 
   .stay_chk + label {
     display: block;
-    inline-size: 24px;
-    block-size: 24px;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
     background-image: url("../assets/checked.svg");
     background-repeat: no-repeat;
   }
 
   .stay_chk:checked + label {
     display: block;
-    inline-size: 24px;
-    block-size: 24px;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
     background-image: url("../assets/unchecked.svg");
     background-repeat: no-repeat;
   }
@@ -144,10 +143,10 @@ a {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    margin-block-start: 10px;
+    margin-block-start: 0.625rem;
 
     p {
-      margin-inline: 4px;
+      margin-inline: 0.3125rem;
     }
   }
 
@@ -157,7 +156,7 @@ a {
 
     .login_options .ip_security {
       display: flex;
-      gap: 4px;
+      gap: 0.3125rem;
     }
   }
 }
