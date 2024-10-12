@@ -45,7 +45,7 @@
 
     <form action="/" class="login_insert_info">
       <div class="insert_id">
-        <label for="login_id" class="id__label">아이디</label>
+        <label for="login_id" class="id__label sr-only">아이디</label>
         <input
           type="email"
           class="input_id"
@@ -57,7 +57,7 @@
         <p class="invalid_id">아이디는 이메일 형식으로 입력해 주세요</p>
       </div>
       <div class="insert_pwd">
-        <label for="login_pwd" class="pwd__label">비밀번호</label>
+        <label for="login_pwd" class="pwd__label sr-only">비밀번호</label>
         <input
           type="password"
           class="input_pwd"
@@ -69,10 +69,10 @@
         />
         <p class="invalid_pwd">비밀번호는 10자리 이상 입력해 주세요</p>
       </div>
-      <button type="submit" class="login_btn"></button>
-      <div class="login_options">
-        <section class="stay_loggedin">
-          <h2>로그인 상태 유지</h2>
+      <button type="submit" class="login_btn">로그인</button>
+      <section class="login_options">
+        <div class="stay_loggedin">
+          <p>로그인 상태 유지</p>
           <svg
             width="24"
             height="24"
@@ -99,12 +99,14 @@
               fill="white"
             />
           </svg>
-        </section>
-        <section>
-          <h2>IP 보안</h2>
+        </div>
+        <div class="ip_security">
+          <a href="./pages/ip_security.html">
+            <p>IP 보안</p>
+          </a>
           <p>ON</p>
-        </section>
-      </div>
+        </div>
+      </section>
     </form>
   </body>
 </html>

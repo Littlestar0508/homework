@@ -1,5 +1,18 @@
 @import "../styles/reset.css";
 
+body {
+  --base-text-color: #121212;
+  --base-text-size: 16px;
+  --logo-width: 230px;
+  --focus-color: #24388d;
+  --input-border-color: #dadada;
+  --input-bgc: #fff;
+  --input-focus-border-color: #03cf5d;
+  --input-focus-bgc: #e9f0fd;
+  --btn-text-color: #fff;
+  --btn-bgc: #03cf5d;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -20,4 +33,55 @@
 .invalid_id {
   display: none;
   color: red;
+}
+
+.naver_logo {
+  inline-size: var(--logo-width);
+  margin-inline: auto;
+}
+
+.login_insert_info {
+  inline-size: 100%;
+  padding-inline: 20px;
+  background-color: darkkhaki;
+
+  .login_options .ip_security {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    background-color: yellow;
+    inline-size: 500px;
+    margin-inline: auto;
+
+    .login_options .ip_security {
+      display: block;
+    }
+  }
+
+  .input_pwd,
+  .input_id {
+    font-size: 14px;
+    line-height: 45px;
+    border: 1px solid var(--input-border-color);
+    background-color: var(--input-bgc);
+    inline-size: 100%;
+  }
+
+  .input_pwd:focus,
+  .input_id:focus {
+    outline: none;
+    border: 2px solid var(--input-focus-border-color);
+    background-color: var(--input-focus-bgc);
+  }
+
+  .login_btn {
+    all: unset;
+    inline-size: 100%;
+    font-size: var(--base-text-size);
+    line-height: 45px;
+    color: var(--btn-text-color);
+    background-color: var(--btn-bgc);
+    margin-block-start: 20px;
+  }
 }
