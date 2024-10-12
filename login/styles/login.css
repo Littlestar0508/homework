@@ -146,7 +146,8 @@ a {
     justify-content: space-between;
     margin-block-start: 0.625rem;
 
-    p {
+    p,
+    .logged_label {
       margin-inline: 0.3125rem;
     }
   }
