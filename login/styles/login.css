@@ -14,6 +14,12 @@ body {
   --input-focus-bgc: #e9f0fd;
   --btn-text-color: #fff;
   --btn-bgc: #03cf5d;
+  --wrong-validate: #ff1414;
+}
+
+a {
+  text-decoration: none;
+  color: var(--base-text-color);
 }
 
 .sr-only {
@@ -28,43 +34,10 @@ body {
   clip: rect(0 0 0 0);
 }
 
-a {
-  text-decoration: none;
-  color: var(--base-text-color);
-}
-
-.input_pwd:invalid + .invalid_pwd,
-.input_id:invalid + .invalid_id {
-  display: block;
-}
-.invalid_pwd,
-.invalid_id {
-  display: none;
-  color: red;
-  margin-block-start: 7px;
-  margin-block-end: 10px;
-}
-
 .naver_logo {
   inline-size: var(--logo-width);
   margin-inline: auto;
   margin-block-start: 100px;
-}
-
-.login_options {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  margin-block-start: 10px;
-
-  p {
-    margin-inline: 4px;
-  }
-
-  .stay_loggedin {
-    display: flex;
-    margin-inline: 0;
-  }
 }
 
 .login_insert_info {
@@ -75,20 +48,6 @@ a {
   .insert_id,
   .insert_pwd {
     margin-block: 10px;
-  }
-
-  .login_options .ip_security {
-    display: none;
-  }
-
-  @media (min-width: 768px) {
-    inline-size: 500px;
-    margin-inline: auto;
-
-    .login_options .ip_security {
-      display: flex;
-      gap: 4px;
-    }
   }
 
   .input_pwd,
@@ -108,6 +67,24 @@ a {
     background-color: var(--input-focus-bgc);
   }
 
+  .invalid_pwd,
+  .invalid_id {
+    display: none;
+    color: var(--wrong-validate);
+    margin-block-start: 7px;
+    margin-block-end: 10px;
+    font-size: 12px;
+  }
+
+  .input_pwd:invalid + .invalid_pwd,
+  .input_id:invalid + .invalid_id {
+    display: block;
+  }
+
+  .login_options .ip_security {
+    display: none;
+  }
+
   .login_btn {
     all: unset;
     inline-size: 100%;
@@ -118,11 +95,21 @@ a {
     margin-block-start: 10px;
     text-align: center;
     font-weight: 600;
+
+    &:focus {
+      outline: 1px solid black;
+    }
   }
 
   .stay_chk,
   .ip_secu_chk {
     all: unset;
+  }
+
+  .stay_loggedin,
+  .ipsecurity {
+    display: flex;
+    margin-inline: 0;
   }
 
   .stay_chk + label {
@@ -151,5 +138,26 @@ a {
     content: "OFF";
     color: #999999;
     font-weight: 800;
+  }
+
+  .login_options {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-block-start: 10px;
+
+    p {
+      margin-inline: 4px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    inline-size: 500px;
+    margin-inline: auto;
+
+    .login_options .ip_security {
+      display: flex;
+      gap: 4px;
+    }
   }
 }
