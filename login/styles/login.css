@@ -53,6 +53,7 @@ a {
 
 .login_options {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin-block-start: 10px;
 
@@ -69,15 +70,18 @@ a {
 .login_insert_info {
   inline-size: 100%;
   padding-inline: 20px;
-  background-color: darkkhaki;
   margin-block-start: 50px;
+
+  .insert_id,
+  .insert_pwd {
+    margin-block: 10px;
+  }
 
   .login_options .ip_security {
     display: none;
   }
 
   @media (min-width: 768px) {
-    background-color: yellow;
     inline-size: 500px;
     margin-inline: auto;
 
@@ -111,11 +115,13 @@ a {
     line-height: 45px;
     color: var(--btn-text-color);
     background-color: var(--btn-bgc);
-    margin-block-start: 13px;
+    margin-block-start: 10px;
     text-align: center;
+    font-weight: 600;
   }
 
-  .stay_chk {
+  .stay_chk,
+  .ip_secu_chk {
     all: unset;
   }
 
@@ -134,20 +140,16 @@ a {
     background-image: url("../assets/unchecked.svg");
     background-repeat: no-repeat;
   }
-}
 
-.chk {
-  all: unset;
-}
+  .ip_secu_chk + label::after {
+    content: "ON";
+    color: var(--btn-bgc);
+    font-weight: 800;
+  }
 
-.chk + label::after {
-  content: "ON";
-  color: #03cf5d;
-  font-weight: 800;
-}
-
-.chk:checked + label::after {
-  content: "OFF";
-  color: gray;
-  font-weight: 800;
+  .ip_secu_chk:checked + label::after {
+    content: "OFF";
+    color: #999999;
+    font-weight: 800;
+  }
 }
