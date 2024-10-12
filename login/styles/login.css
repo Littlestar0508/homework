@@ -11,3 +11,13 @@
   border: 0;
   clip: rect(0 0 0 0);
 }
+
+.input_pwd:invalid + .invalid_pwd,
+.input_id:invalid + .invalid_id {
+  display: block;
+}
+.invalid_pwd,
+.invalid_id {
+  display: none;
+  color: red;
+}
