@@ -43,6 +43,7 @@ a {
   inline-size: 100%;
   padding-inline: 1.25rem;
   margin-block-start: 3.125rem;
+  box-sizing: border-box;
 
   .input_id,
   .input_pwd {
