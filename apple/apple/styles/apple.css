@@ -1,0 +1,300 @@
+@import "./base.css";
+@import "./reset.css";
+@import "./theme.css";
+/* 카드 레이아웃 */
+
+.wide_grid_container {
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-columns: minmax(800px, 1fr);
+  grid-template-rows: repeat(3, 600px);
+  row-gap: var(--small-spacing);
+
+  .ipad_pro {
+    background-image: image-set(
+      url("../products/ipad_pro.jpeg") 1x,
+      url("../products/ipad_pro_2x.jpeg") 2x
+    );
+  }
+
+  .ipad_air {
+    background-image: image-set(
+      url("../products/ipad_air.jpeg") 1x,
+      url("../products/ipad_air_2x.jpeg") 2x
+    );
+  }
+
+  .iphone_pro {
+    background-image: image-set(
+      url("../products/iphone15_pro.jpeg") 1x,
+      url("../products/iphone15_pro_2x.jpeg") 2x
+    );
+  }
+
+  .subgrid_dark {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+
+    color: var(--white);
+
+    .product_name {
+      font-size: var(--large-text); /**/
+      margin-block-end: var(--small-spacing);
+      margin-block-start: var(--large-spacing); /**/
+    }
+
+    .explanation_container {
+      font-size: var(--base-text); /**/
+      margin-block-end: var(--x-small-spacing);
+      line-height: var(--line-normal);
+    }
+
+    .due_dat {
+      font-size: var(--small-text);
+    }
+
+    .btn_container {
+      display: flex;
+      justify-content: center;
+      margin-block: var(--x-small-spacing);
+      font-size: var(--xx-small-text); /**/
+    }
+
+    .more_info_btn {
+      background-color: var(--blue-200);
+      border: 1px solid var(--blue-200);
+      color: var(--white);
+      border-radius: 5rem;
+      inline-size: 5rem;
+      margin-inline-end: var(--base-spacing);
+      padding: var(--x-small-spacing);
+    }
+
+    .price_btn {
+      background-color: transparent;
+      border: 1px solid var(--blue-200);
+      color: var(--blue-200);
+      border-radius: 5rem;
+      inline-size: 5rem;
+      padding-block: var(--x-small-spacing);
+      padding-inline: var(--small-spacing);
+    }
+  }
+
+  .subgrid_light {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    color: var(--black);
+
+    .product_name {
+      font-size: var(--large-text);
+      margin-block-end: var(--small-spacing);
+      margin-block-start: var(--large-spacing);
+    }
+
+    .explanation_container {
+      font-size: var(--base-text);
+      margin-block-end: var(--x-small-spacing);
+      line-height: var(--line-normal);
+    }
+
+    .due_dat {
+      font-size: var(--small-text);
+    }
+
+    .btn_container {
+      display: flex;
+      justify-content: center;
+      margin-block: var(--x-small-spacing);
+      font-size: var(--xx-small-text);
+    }
+
+    .more_info_btn {
+      background-color: var(--black);
+      border: 1px solid var(--black);
+      color: var(--white);
+      border-radius: 5rem;
+      inline-size: 5rem;
+      margin-inline-end: var(--base-spacing);
+      padding: var(--x-small-spacing);
+    }
+
+    .price_btn {
+      background-color: transparent;
+      border: 1px solid var(--black);
+      color: var(--black);
+      border-radius: 5rem;
+      inline-size: 5rem;
+      padding-block: var(--x-small-spacing);
+      padding-inline: var(--small-spacing);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .ipad_pro {
+      background-image: image-set(
+        url("../products/ipad_pro_wide.jpeg") 1x,
+        url("../products/ipad_pro_wide_2x.jpeg") 2x
+      );
+      background-size: cover;
+    }
+
+    .ipad_air {
+      background-image: image-set(
+        url("../products/ipad_air_wide.jpeg") 1x,
+        url("../products/ipad_air_wide_2x.jpeg") 2x
+      );
+      background-size: cover;
+    }
+
+    .iphone_pro {
+      background-image: image-set(
+        url("../products/iphone15_pro_wide.jpeg") 1x,
+        url("../products/iphone15_pro_wide_2x.jpeg") 2x
+      );
+      background-size: cover;
+    }
+
+    .subgrid_light,
+    .subgrid_dark {
+      .product_name {
+        font-size: var(--extra-large-text);
+        margin-block-start: var(--extra-large-spacing);
+      }
+
+      .explanation_container {
+        font-size: var(--medium-text);
+      }
+
+      .btn_container {
+        font-size: var(--x-small-text);
+      }
+    }
+  }
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: minmax(800px, 1fr);
+  grid-template-rows: repeat(4, 800px);
+  margin-block-start: var(--small-spacing);
+  gap: var(--small-spacing);
+
+  .iphone {
+    background-image: image-set(
+      url("../products/iphone15.jpeg") 1x,
+      url("../products/iphone15_2x.jpeg") 2x
+    );
+  }
+
+  .subgrid_dark {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+
+    color: var(--white);
+
+    .product_name {
+      font-size: var(--large-text); /**/
+      margin-block-end: var(--small-spacing);
+      margin-block-start: var(--large-spacing); /**/
+    }
+
+    .explanation_container {
+      font-size: var(--base-text); /**/
+      margin-block-end: var(--x-small-spacing);
+      line-height: var(--line-normal);
+    }
+
+    .due_dat {
+      font-size: var(--small-text);
+    }
+
+    .btn_container {
+      display: flex;
+      justify-content: center;
+      margin-block: var(--x-small-spacing);
+      font-size: var(--xx-small-text); /**/
+    }
+
+    .more_info_btn {
+      background-color: var(--blue-200);
+      border: 1px solid var(--blue-200);
+      color: var(--white);
+      border-radius: 5rem;
+      inline-size: 5rem;
+      margin-inline-end: var(--base-spacing);
+      padding: var(--x-small-spacing);
+    }
+
+    .price_btn {
+      background-color: transparent;
+      border: 1px solid var(--blue-200);
+      color: var(--blue-200);
+      border-radius: 5rem;
+      inline-size: 5rem;
+      padding-block: var(--x-small-spacing);
+      padding-inline: var(--small-spacing);
+    }
+  }
+
+  .subgrid_light {
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    color: var(--black);
+
+    .product_name {
+      font-size: var(--large-text);
+      margin-block-end: var(--small-spacing);
+      margin-block-start: var(--large-spacing);
+    }
+
+    .explanation_container {
+      font-size: var(--base-text);
+      margin-block-end: var(--x-small-spacing);
+      line-height: var(--line-normal);
+    }
+
+    .due_dat {
+      font-size: var(--small-text);
+    }
+
+    .btn_container {
+      display: flex;
+      justify-content: center;
+      margin-block: var(--x-small-spacing);
+      font-size: var(--xx-small-text);
+    }
+
+    .more_info_btn {
+      background-color: var(--black);
+      border: 1px solid var(--black);
+      color: var(--white);
+      border-radius: 5rem;
+      inline-size: 5rem;
+      margin-inline-end: var(--base-spacing);
+      padding: var(--x-small-spacing);
+    }
+
+    .price_btn {
+      background-color: transparent;
+      border: 1px solid var(--black);
+      color: var(--black);
+      border-radius: 5rem;
+      inline-size: 5rem;
+      padding-block: var(--x-small-spacing);
+      padding-inline: var(--small-spacing);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
