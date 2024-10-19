@@ -3,11 +3,11 @@
 @import "./theme.css";
 /* 카드 레이아웃 */
 
+/* 그리드의 이미지가 와이드와 일반 형태로 전환되는 영역 */
 .wide_grid_container {
-  /* background-color: yellow; */
   display: grid;
-  grid-template-columns: minmax(800px, 1fr);
-  grid-template-rows: repeat(3, 600px);
+  grid-template-columns: minmax(50rem, 1fr);
+  grid-template-rows: repeat(3, 37.5rem);
   row-gap: var(--small-spacing);
 
   .ipad_pro {
@@ -31,116 +31,13 @@
     );
   }
 
-  .subgrid_dark {
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
-
-    color: var(--white);
-
-    .product_name {
-      font-size: var(--large-text); /**/
-      margin-block-end: var(--small-spacing);
-      margin-block-start: var(--large-spacing); /**/
-    }
-
-    .explanation_container {
-      font-size: var(--base-text); /**/
-      margin-block-end: var(--x-small-spacing);
-      line-height: var(--line-normal);
-    }
-
-    .due_dat {
-      font-size: var(--small-text);
-    }
-
-    .btn_container {
-      display: flex;
-      justify-content: center;
-      margin-block: var(--x-small-spacing);
-      font-size: var(--xx-small-text); /**/
-    }
-
-    .more_info_btn {
-      background-color: var(--blue-200);
-      border: 1px solid var(--blue-200);
-      color: var(--white);
-      border-radius: 5rem;
-      inline-size: 5rem;
-      margin-inline-end: var(--base-spacing);
-      padding: var(--x-small-spacing);
-    }
-
-    .price_btn {
-      background-color: transparent;
-      border: 1px solid var(--blue-200);
-      color: var(--blue-200);
-      border-radius: 5rem;
-      inline-size: 5rem;
-      padding-block: var(--x-small-spacing);
-      padding-inline: var(--small-spacing);
-    }
-  }
-
-  .subgrid_light {
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
-    color: var(--black);
-
-    .product_name {
-      font-size: var(--large-text);
-      margin-block-end: var(--small-spacing);
-      margin-block-start: var(--large-spacing);
-    }
-
-    .explanation_container {
-      font-size: var(--base-text);
-      margin-block-end: var(--x-small-spacing);
-      line-height: var(--line-normal);
-    }
-
-    .due_dat {
-      font-size: var(--small-text);
-    }
-
-    .btn_container {
-      display: flex;
-      justify-content: center;
-      margin-block: var(--x-small-spacing);
-      font-size: var(--xx-small-text);
-    }
-
-    .more_info_btn {
-      background-color: var(--black);
-      border: 1px solid var(--black);
-      color: var(--white);
-      border-radius: 5rem;
-      inline-size: 5rem;
-      margin-inline-end: var(--base-spacing);
-      padding: var(--x-small-spacing);
-    }
-
-    .price_btn {
-      background-color: transparent;
-      border: 1px solid var(--black);
-      color: var(--black);
-      border-radius: 5rem;
-      inline-size: 5rem;
-      padding-block: var(--x-small-spacing);
-      padding-inline: var(--small-spacing);
-    }
-  }
-
-  @media (min-width: 1024px) {
+  /* 1024px이상이 된다면 이미지가 wide의 형태로 바뀌도록 설계 */
+  @media (min-width: 64rem) {
     .ipad_pro {
       background-image: image-set(
         url("../products/ipad_pro_wide.jpeg") 1x,
         url("../products/ipad_pro_wide_2x.jpeg") 2x
       );
-      background-size: cover;
     }
 
     .ipad_air {
@@ -148,7 +45,6 @@
         url("../products/ipad_air_wide.jpeg") 1x,
         url("../products/ipad_air_wide_2x.jpeg") 2x
       );
-      background-size: cover;
     }
 
     .iphone_pro {
@@ -156,31 +52,15 @@
         url("../products/iphone15_pro_wide.jpeg") 1x,
         url("../products/iphone15_pro_wide_2x.jpeg") 2x
       );
-      background-size: cover;
-    }
-
-    .subgrid_light,
-    .subgrid_dark {
-      .product_name {
-        font-size: var(--extra-large-text);
-        margin-block-start: var(--extra-large-spacing);
-      }
-
-      .explanation_container {
-        font-size: var(--medium-text);
-      }
-
-      .btn_container {
-        font-size: var(--x-small-text);
-      }
     }
   }
 }
 
+/* 그리드의 이미지가 1x4의 그리드에서 1024px부터는 2x2로 늘어나는 영역 */
 .grid_container {
   display: grid;
-  grid-template-columns: minmax(800px, 1fr);
-  grid-template-rows: repeat(4, 800px);
+  grid-template-columns: minmax(50rem, 1fr);
+  grid-template-rows: repeat(4, 37.5rem);
   margin-block-start: var(--small-spacing);
   gap: var(--small-spacing);
 
@@ -191,110 +71,159 @@
     );
   }
 
+  .applewatch {
+    background-image: image-set(
+      url("../products/apple_watch.jpeg") 1x,
+      url("../products/apple_watch_2x.jpeg") 2x
+    );
+  }
+
+  .airpod {
+    background-image: image-set(
+      url("../products/airpods_pro.jpeg") 1x,
+      url("../products/airpods_pro_2x.jpeg") 2x
+    );
+  }
+
+  .macbook {
+    background-image: image-set(
+      url("../products/macbook_air.jpeg") 1x,
+      url("../products/macbook_air_2x.jpeg") 2x
+    );
+  }
+
+  /* 1024px 이상이 된다면 2x2의 그리드로 생성 */
+  @media (min-width: 64rem) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 37.5rem);
+
+    .explanation_container .explanation {
+      display: inline;
+    }
+  }
+}
+
+/* 레이아웃 내의 텍스트 및 영역의 크기 할당 재분배(1024px이상) */
+/* !important는 정말 아쉽지만 뾰족한 방법이 생각나지 않았음 추후 refactoring 필요 */
+@media (min-width: 64rem) {
+  .subgrid_light,
   .subgrid_dark {
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
+    .product_name {
+      font-size: var(--extra-large-text) !important;
+      margin-block-start: var(--extra-large-spacing) !important;
+    }
 
+    .explanation_container {
+      font-size: var(--medium-text) !important;
+    }
+
+    .btn_container {
+      font-size: var(--x-small-text) !important;
+    }
+  }
+}
+
+/* 배경의 밝기로 구분하여 버튼 요소 및 레이아웃 작성 */
+.subgrid_dark {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  color: var(--white);
+
+  .product_name {
+    font-size: var(--large-text); /**/
+    margin-block-end: var(--small-spacing);
+    margin-block-start: var(--large-spacing); /**/
+  }
+
+  .explanation_container {
+    font-size: var(--base-text); /**/
+    margin-block-end: var(--x-small-spacing);
+    line-height: var(--line-normal);
+  }
+
+  .due_date {
+    font-size: var(--small-text);
+    color: var(--gray);
+  }
+
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    margin-block: var(--x-small-spacing);
+    font-size: var(--xx-small-text); /**/
+  }
+
+  .more_info_btn {
+    background-color: var(--blue-200);
+    border: 1px solid var(--blue-200);
     color: var(--white);
-
-    .product_name {
-      font-size: var(--large-text); /**/
-      margin-block-end: var(--small-spacing);
-      margin-block-start: var(--large-spacing); /**/
-    }
-
-    .explanation_container {
-      font-size: var(--base-text); /**/
-      margin-block-end: var(--x-small-spacing);
-      line-height: var(--line-normal);
-    }
-
-    .due_dat {
-      font-size: var(--small-text);
-    }
-
-    .btn_container {
-      display: flex;
-      justify-content: center;
-      margin-block: var(--x-small-spacing);
-      font-size: var(--xx-small-text); /**/
-    }
-
-    .more_info_btn {
-      background-color: var(--blue-200);
-      border: 1px solid var(--blue-200);
-      color: var(--white);
-      border-radius: 5rem;
-      inline-size: 5rem;
-      margin-inline-end: var(--base-spacing);
-      padding: var(--x-small-spacing);
-    }
-
-    .price_btn {
-      background-color: transparent;
-      border: 1px solid var(--blue-200);
-      color: var(--blue-200);
-      border-radius: 5rem;
-      inline-size: 5rem;
-      padding-block: var(--x-small-spacing);
-      padding-inline: var(--small-spacing);
-    }
+    border-radius: 5rem;
+    inline-size: 5rem;
+    margin-inline-end: var(--base-spacing);
+    padding: var(--x-small-spacing);
   }
 
-  .subgrid_light {
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
+  .price_btn {
+    background-color: transparent;
+    border: 1px solid var(--blue-200);
+    color: var(--blue-200);
+    border-radius: 5rem;
+    inline-size: 5rem;
+    padding-block: var(--x-small-spacing);
+    padding-inline: var(--small-spacing);
+  }
+}
+
+.subgrid_light {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: var(--black);
+
+  .product_name {
+    font-size: var(--large-text);
+    margin-block-end: var(--small-spacing);
+    margin-block-start: var(--large-spacing);
+  }
+
+  .explanation_container {
+    font-size: var(--base-text);
+    margin-block-end: var(--x-small-spacing);
+    line-height: var(--line-normal);
+  }
+
+  .due_dat {
+    font-size: var(--small-text);
+  }
+
+  .btn_container {
+    display: flex;
+    justify-content: center;
+    margin-block: var(--x-small-spacing);
+    font-size: var(--xx-small-text);
+  }
+
+  .more_info_btn {
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    color: var(--white);
+    border-radius: 5rem;
+    inline-size: 5rem;
+    margin-inline-end: var(--base-spacing);
+    padding: var(--x-small-spacing);
+  }
+
+  .price_btn {
+    background-color: transparent;
+    border: 1px solid var(--black);
     color: var(--black);
-
-    .product_name {
-      font-size: var(--large-text);
-      margin-block-end: var(--small-spacing);
-      margin-block-start: var(--large-spacing);
-    }
-
-    .explanation_container {
-      font-size: var(--base-text);
-      margin-block-end: var(--x-small-spacing);
-      line-height: var(--line-normal);
-    }
-
-    .due_dat {
-      font-size: var(--small-text);
-    }
-
-    .btn_container {
-      display: flex;
-      justify-content: center;
-      margin-block: var(--x-small-spacing);
-      font-size: var(--xx-small-text);
-    }
-
-    .more_info_btn {
-      background-color: var(--black);
-      border: 1px solid var(--black);
-      color: var(--white);
-      border-radius: 5rem;
-      inline-size: 5rem;
-      margin-inline-end: var(--base-spacing);
-      padding: var(--x-small-spacing);
-    }
-
-    .price_btn {
-      background-color: transparent;
-      border: 1px solid var(--black);
-      color: var(--black);
-      border-radius: 5rem;
-      inline-size: 5rem;
-      padding-block: var(--x-small-spacing);
-      padding-inline: var(--small-spacing);
-    }
-  }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: 1fr 1fr;
+    border-radius: 5rem;
+    inline-size: 5rem;
+    padding-block: var(--x-small-spacing);
+    padding-inline: var(--small-spacing);
   }
 }
