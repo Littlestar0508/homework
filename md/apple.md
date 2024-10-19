@@ -1,2 +1,3 @@
 # apple 제품 카드
-그리드를 사용하여 구현하고 구현 결과를 움직이는 이미지로 생성하여 삽입해주세요.
+[HTML링크](https://littlestar0508.github.io/homework/apple/apple.html)<br/>
+![Alt Text]("../../images/apple_wide.gif")
